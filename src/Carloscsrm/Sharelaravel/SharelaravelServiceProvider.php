@@ -1,0 +1,55 @@
+<?php namespace Carloscsrm\Sharelaravel;
+
+use Illuminate\Support\ServiceProvider;
+
+class SharelaravelServiceProvider extends ServiceProvider
+{
+
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
+
+    /**
+     * Bootstrap the application events.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        $this->package('carloscsrm/sharelaravel', null, __DIR__);
+    }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->bind('sharelaravel', function($app)
+        {
+            return new Sharelaravel;
+        });
+
+        $this->app->booting(
+            function () {
+                $loader = \Illuminate\Foundation\AliasLoader::getInstance();
+                $loader->alias('Sharelaravel', 'Carloscsrm\Sharelaravel\SharelaravelFacade');
+            }
+        );
+    }
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return array('sharelaravel');
+    }
+
+}

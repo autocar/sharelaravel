@@ -1,0 +1,33 @@
+{
+  "name": "carloscsrm/sharelaravel",
+  "description": "Share content in Facebook and Twitter",
+  "keywords": [
+    "facebook",
+    "twitter",
+    "php",
+    "share",
+    "laravel",
+    "social network"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Carlos Rodríguez",
+      "email": "carloscsrm@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "illuminate/support": "4.2.*"
+  },
+  "autoload": {
+    "classmap": [
+      "src/migrations"
+    ],
+    "psr-0": {
+      "Carloscsrm\\Sharelaravel\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "version": "v1.0.2"
+}
