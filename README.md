@@ -9,12 +9,6 @@ Pugin for Laravel 4 just to share content in Facebook and Twitter
 [![License](https://poser.pugx.org/carloscsrm/sharelaravel/license.svg)](https://packagist.org/packages/carloscsrm/sharelaravel)
 
 
-[![Latest Stable Version](https://poser.pugx.org/carloscsrm/sharelaravel/v/stable.svg)](https://packagist.org/packages/carloscsrm/sharelaravel) 
-[![Total Downloads](https://poser.pugx.org/carloscsrm/sharelaravel/downloads.svg)](https://packagist.org/packages/carloscsrm/sharelaravel) 
-[![Latest Unstable Version](https://poser.pugx.org/carloscsrm/sharelaravel/v/unstable.svg)](https://packagist.org/packages/carloscsrm/sharelaravel) 
-[![License](https://poser.pugx.org/carloscsrm/sharelaravel/license.svg)](https://packagist.org/packages/carloscsrm/sharelaravel)
-
-
 ## Installation
 
 1. Add `carloscsrm/sharelaravel` to `composer.json`.
