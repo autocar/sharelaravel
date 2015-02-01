@@ -1,5 +1,5 @@
 # share-laravel
-Pugin for Laravel 4 just to share content in Facebook and Twitter
+Plugin for Laravel 4 just to share content in Facebook and Twitter
 
 [![Build Status](https://travis-ci.org/simkimsia/UtilityBehaviors.png)](https://coveralls.io/r/carlosrgzm/sharelaravel)
 [![Coverage Status](https://coveralls.io/repos/carlosrgzm/sharelaravel/badge.svg)](https://coveralls.io/r/carlosrgzm/sharelaravel)
@@ -32,5 +32,5 @@ Run `php artisan config:publish carloscsrm/sharelaravel` and modify the config f
 
 For using this package you can add this code in your templates
 
-`{{Sharelaravel::render($your_url, array('twitterVia'=>'your_twitter_account', 'textToShare'=>'Your text for twitter' }}`
+`{{Sharelaravel::render($your_url, array('twitterVia'=>'your_twitter_account', 'textToShare'=>'Your text for twitter')) }}`
 
